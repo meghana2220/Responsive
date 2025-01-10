@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color:greenyellow;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background:rgb(139, 92, 34);
+        }
+
+        nav a {
+            color:ghostwhite;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+        }
+
+        nav a:hover {
+            background:rgb(51, 59, 65);
+        }
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background:gray;
+        }
+
+        .hero h1 {
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .grid-item {
+            background:paleturquoise;
+            padding: 1rem;
+            border: 1px solid rgb(75, 99, 26);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: grey;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 1rem;
+                border-top: 1px solid #555;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Discovering my work, skills, and passion for web development.</p>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hello, my name is Meghana,and iam excited to begin my professional journey.Iam pursuing my bachelor degree in Computer science from Annie Besant women's college.Iam a quick learner,highly motivated,and looking forward to gaining hands-on experience while growing both personally and professionally.</p>
+        <p>I'm a passionate web developer with experience in creating responsive websites and applications.</p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <h3>Project 1</h3>
+                <h2>Restuarent menu</h2>
+                <p>Our Menu filled with delicious dishes crafted with the finest ingredients.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Project 2</h3>
+                <h2>Ecommerce Website</h2>
+                <p>Onestop destination for beautiful,fresh,and thoughtfully curated flowers.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Project 3</h3>
+                <h2>Registration form</h2>
+                <p>Fill out the form below to join [platform] and gain access to exclusive features,personalized services and updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me at <a href="">meghanaa2220@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
